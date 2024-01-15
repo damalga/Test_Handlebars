@@ -1,0 +1,25 @@
+.grid-section {
+    text-align: center;
+    .grid-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        .banner {
+            padding: 12px;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        .small-banner {
+            width: 33.33%;
+        }
+    }
+    .large-banner {
+        img{
+            width: 100%;
+        }
+    }
+}
+

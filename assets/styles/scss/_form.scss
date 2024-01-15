@@ -1,0 +1,115 @@
+.form {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1rem;
+    .form-aside {
+        width: 25%;
+        background-color: $color-secondary;
+        padding: 20px;
+        .search {
+            margin-bottom: 24px;
+            display: flex;
+            i{
+                background-color: $color-primary;
+                color: $color-secondary;
+                padding: 8px;
+            }
+            input{
+                padding: 8px;
+                border: 1px solid #ddd;
+                opacity: .8;
+            }
+        }
+        .accordion{
+            padding: 1.6rem .4rem 1.2rem .4rem;
+            h2 {
+                color: $color-primary;
+                font-size: 1.25rem;
+                margin-bottom: .8rem;
+                display: flex;
+                justify-content: space-between;
+                .accordion-arrow {
+                    transition: transform 0.3s ease-in-out; /* Efecto suave de rotación */
+                }
+            }
+            .checkbox-group {
+                margin-bottom: 24px;
+                display: none;
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                }
+                input[type="checkbox"] {
+                    accent-color: #4299e1;
+                    margin-right: 8px;
+                }
+                &.active{
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    .results {
+        width: 75%;
+        flex-grow: 1;
+        display: flex;
+        .result {
+            position: relative;
+            height: fit-content;
+            .result-date {
+                display: inline-block;
+                background-color: #edf2f7;
+                padding: .4rem .6rem;
+                font-size: 14px;
+                color: #2a4365;
+                position: absolute;
+            }
+            .result-img {
+                width: 100%;
+                display: block;
+            }
+            .result-details {
+                background-color: #ffffff;
+                padding: 15px;
+                p {
+                    margin: 5px 0;
+                    color: #333333;
+                }
+                .result-icon {
+                    float: left;
+                }
+                .result-title {
+                    color: $color-hover;
+                    margin: 10px 0 20px 50px;
+                }
+                .icons{
+                    .icon {
+                        margin: 10px 0;
+                        i {
+                            margin-right: 5px;
+                            color: $color-hover;
+                            float: left;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-button{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-left: 25%;
+    button.cargarmas{
+        width: 8rem;
+        height: 2rem;
+        border: 1px solid #000;
+        background-color: #ffffff;
+    }
+}

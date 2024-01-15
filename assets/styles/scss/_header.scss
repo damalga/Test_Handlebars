@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $color-secondary;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+  
+      img {
+        height: 50px;
+      }
+    }
+  
+    nav {
+      display: flex;
+      gap: 10px;
+  
+      a {
+        text-decoration: none;
+        color: $color-text;
+        font-weight: bold;
+        padding: math.div(10px, 2) 20px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          border-bottom: 2px solid $color-hover;
+        }
+      }
+    }
+  
+    .login {
+      display: flex;
+      gap: 20px;
+  
+      a {
+        text-decoration: none;
+        padding: math.div(10px, 2) 20px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+  
+        &.iniciar-sesion {
+          background-color: transparent;
+          color: $color-primary;
+          border: 2px solid $color-primary;
+  
+          &:hover {
+            background-color: $color-primary;
+            color: $color-secondary;
+          }
+        }
+  
+        &:not(.iniciar-sesion) {
+          background-color: $color-primary;
+          color: $color-secondary;
+  
+          &:hover {
+            background-color: darken($color-primary, 10%);
+          }
+        }
+      }
+    }
+  }
+  

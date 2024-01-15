@@ -1,0 +1,105 @@
+<section class="form">
+    <aside class="form-aside">
+        
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="accordion">            
+            <h2>TIPOLOXÍA
+                <i class="fas fa-chevron-down accordion-arrow"></i></h2>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox">Presentación
+                </label>
+                <label>
+                    <input type="checkbox">Libros
+                </label>
+                <label>
+                    <input type="checkbox">Conta contos
+                </label>
+                <label>
+                    <input type="checkbox">Tertulia / Coloquio
+                </label>
+                <label>
+                    <input type="checkbox">Club de lectura
+                </label>
+                <label>
+                    <input type="checkbox">Taller / Actividade
+                </label>
+                <label>
+                    <input type="checkbox">Evento musical
+                </label>
+                <label>
+                    <input type="checkbox">Proxeccións audiovisuais
+                </label>
+                <label>
+                    <input type="checkbox">Feiras do libro
+                </label>
+                <label>
+                    <input type="checkbox">Outros
+                </label>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>LOCALIZACIÓN<i class="fas fa-chevron-down accordion-arrow"></i></h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> A Coruña</label>
+                <label><input type="checkbox"> Lugo</label>
+                <label><input type="checkbox"> Ourense</label>
+                <label><input type="checkbox"> Pontevedra</label>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>PÚBLICO<i class="fas fa-chevron-down accordion-arrow"></i></h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Adulto</label>
+                <label><input type="checkbox"> Todos los públicos</label>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>MODALIDADE<i class="fas fa-chevron-down accordion-arrow"></i></h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Online</label>
+                <label><input type="checkbox"> Presencial</label>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>ENTRADA<i class="fas fa-chevron-down accordion-arrow"></i></h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Gratuita</label>
+                <label><input type="checkbox"> De pago</label>
+            </div>
+        </div>   
+
+        <div class="accordion">
+            <h2>AFORO<i class="fas fa-chevron-down accordion-arrow"></i></h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> 50</label>
+                <label><input type="checkbox"> 100</label>
+                <label><input type="checkbox"> 250</label>
+                <label><input type="checkbox"> 500</label>
+            </div>
+        </div>
+        
+        <div class="checkbox-group">
+            <label><input type="checkbox">Eventos pasados</label>
+        </div>
+
+    </aside>
+
+    <div class="results">
+        {{>form_result}}
+        {{>form_result}}
+        {{>form_result}}
+    </div>
+</section>
+
+<div class="form-button">
+    <button class="cargarmas">Cargar máis</button>
+</div>

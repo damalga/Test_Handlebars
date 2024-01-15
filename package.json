@@ -1,0 +1,23 @@
+{
+  "name": "htmx",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "htmx",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars": "^4.7.8",
+    "jquery": "^3.7.1"
+  }
+}
